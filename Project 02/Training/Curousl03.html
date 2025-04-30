@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .carousel {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .carousel-track-container {
+            width: 300px;
+            overflow: hidden;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            min-width: 300px;
+            margin: 0 10px;
+            opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .carousel-slide.active {
+            opacity: 1;
+        }
+        .prev, .next {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-track-container">
+            <div class="carousel-track">
+                <div class="carousel-slide"><img src="Slider-01.png" alt="Slide 1"></div>
+                <div class="carousel-slide active"><img src="Slider-02.png" alt="Slide 2"></div>
+                <div class="carousel-slide"><img src="Slider-03.png" alt="Slide 3"></div>
+            </div>
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

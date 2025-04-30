@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Picks</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+.pgFour {
+    width: 100%;
+    height: 1400px;
+    background-image: linear-gradient(to top, black, transparent);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    .BgImg{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1}
+
+        .pgFour h1{
+            font-size: 70px;
+            position: absolute;
+            top: 8%;
+            left: 43%;
+            text-align: center;
+            color: #fff; 
+            border-bottom: 4px solid #8CC63F;}
+
+
+            .pg4container {
+                display: flex;
+                max-width: 1000px;
+                gap: 20px;
+            }
+            
+            /* Sidebar */
+            .pg4sidebar {
+                width: 400px;
+                background-color: #111;
+                padding: 20px;
+                margin-left: 20px;
+            }
+            
+            .pg4sidebar h2 {
+                font-size: 25px;
+                color: white;
+                border-left: 4px solid #8CC63F;
+                padding-left: 10px;
+                margin-bottom: 30px;
+            }
+            
+            .pg4sidebar ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .pg4sidebar li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .pg4sidebar img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+            
+            .pg4sidebar span {
+                color: #8CC63F;
+                font-size: 17px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            
+            .pg4sidebar p {
+                font-size: 14px;
+                margin: 0;
+                color: white;
+            }
+            
+            .pg4see-more {
+                color: #8CC63F;
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                margin-top: 20px;
+                border-bottom: 2px solid #8CC63F;
+                margin: 10px;
+                display: inline-block;
+            }
+            
+            /* Main content */
+            .content {
+                /* flex-grow: 1; */
+            }
+            
+            .pg4main-article {
+                position: relative;
+                background: black;
+            }
+            
+            .pg4main-article img {
+                width: 100%;
+                height: 480px;
+                object-fit: cover;
+            }
+            
+            .pg4main-article span {
+                color: #8CC63F;
+                font-size: 15px;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: block;
+                margin: 10px 20px;
+            }
+            
+            .pg4main-article h1 {
+        font-size: 34px;
+        margin: 10px 0;
+        text-align: left;
+        position: absolute;
+        top: 65%;
+        left: 3%;
+    }
+            
+            .pg4main-article a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                margin: 10px 20px ;
+                text-transform: uppercase;
+                border-bottom: 2px solid white;
+            }
+            
+            /* Sub articles */
+            .pg4sub-articles {
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            
+            .pg4article {
+                background: white;
+                color: black;
+                flex: 1;
+            }
+            
+            .pg4article img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+            
+            .pg4article span {
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: bold;
+                display: block;
+                margin: 10px;
+            }
+            
+            .pg4article h2 {
+                font-size: 20px;    
+                margin: 10px;
+            }
+            
+            .pg4article a {
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+                text-transform: uppercase;
+                border-bottom: 2px solid black;
+                margin: 10px;
+                display: inline-block;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="pgFour"><plays-inline class="BgImg">
+        <img src="TravelBgfour3.jpg" width="100%" height="1500px"></plays-inline>
+            <h1>TRAVEL</h1>
+                <main class="pg4content">
+                    <div class="pg4main-article">
+                        <img src="P1-img 08.jpg" alt="">
+                        <span>SCIENCE MIND, BODY, WONDER</span>
+                        <h1>Will a new colon cancer blood test replace your colonoscopy?</h1>
+                        <a href="#">READ</a>
+                    </div>
+                    <div class="pg4sub-articles">
+                        <div class="pg4article">
+                            <img src="P1-img 09.jpeg" alt="">
+                            <span>SCIENCE</span>
+                            <h2>What Pilates can (and can't) do fior your body</h2>
+                            <a href="#">READ</a>
+                        </div>
+                        <div class="pg4article">
+                            <img src="P1-img 10.jpg" alt="">
+                            <span>HISTORY & CULTURE</span>
+                            <h2>What is Cold Harbor on Severance? History may hold the answer.</h2>
+                            <a href="#">READ</a>
+
+                        </div>
+                    </div>
+                </main>
+                <div class="pg4container">
+                    <aside class="pg4sidebar">
+                        <h2>TODAY'S PICKS</h2>
+                        <ul>
+                            <li>
+                                <img src="P1-img 01.PNG" alt="">
+                                <div>
+                                <span>Kids Sience</span>
+                                <p>Everything you need to know about stargazing in Montana's dark skies</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="P1-img 02.PNG" alt="">
+                                <div>
+                                <span>SCIENCE</span>
+                                <p>What scientists are learning about how to prevent kids' allergies</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="P1-img 03.PNG" alt="">
+                                <div>
+                                <span>HISTORY & CULTURE</span>
+                                <p>Who was Rosa Parks?</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="P1-img 04.PNG" alt="">
+                                <div>
+                                <span>TRAVEL</span>
+                                <p>19 of the most romantic destinations in the world</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="P1-img 05.PNG" alt="">
+                                <div>
+                                <span>HISTORY & CULTURE</span>
+                                <p>How a bloody battlefield inspired the creation of the Red Cross</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="P1-img 06.PNG" alt="">
+                                <div>
+                                <span>LIFESTYLE</span>
+                                <p>For amazing travel photos, start with this essential gear kit</p>
+                            </div>
+                            </li>
+                            <li>
+                                <img src="image7.jpg" alt="">
+                                <div>
+                                <span>LIFESTYLE</span>
+                                <p>For amazing travel photos, start with this essential gear kit</p>
+                            </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="pg4see-more">SEE MORE</a>
+                    </aside>
+            </div>
+    </div>
+                
+    
+    
+
+
+
+</body>
+</html>
+

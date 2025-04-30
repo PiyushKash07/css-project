@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney+ Carousel</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .carousel-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px;
+            gap: 15px;
+            white-space: nowrap;
+        }
+        .carousel-item {
+            min-width: 200px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .left-arrow {
+            left: 20px;
+        }
+        .right-arrow {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>DISCOVER MORE ON DISNEY+</h2>
+    <button class="arrow left-arrow" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="carousel-container" id="carousel">
+        <div class="carousel-item" style="background-image: url('ocean_explorer.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('sharkfest.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('secrets_octopus.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('photographer.jpg');"></div>
+        <div class="carousel-item" style="background-image: url('queens.jpg');"></div>
+    </div>
+    <button class="arrow right-arrow" onclick="scrollCarousel(1)">&#10095;</button>
+    <script>
+        function scrollCarousel(direction) {
+            const container = document.getElementById('carousel');
+            container.scrollBy({ left: direction * 220, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
